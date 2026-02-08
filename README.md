@@ -4,7 +4,7 @@ Um guia interativo com as 10 perguntas mais comuns em entrevistas de JavaScript.
 
 ## 🎯 Características
 
-- ✅ 10 perguntas mais comuns de JavaScript
+- ✅ Perguntas mais comuns de JavaScript
 - 📖 Explicações claras e objetivas
 - 💡 Exemplos práticos de código
 - 🔍 Busca por palavras-chave
