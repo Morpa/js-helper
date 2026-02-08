@@ -1,21 +1,20 @@
 ---
-import "../styles/global.css";
+import InterviewHelper from "@/components/InterviewHelper"
+import { questions } from "../data/questions"
+import "../styles/global.css"
+import "../styles/interview.css"
 ---
 
-<html lang="en">
+<html lang="pt-BR" class="m-0 p-0 w-full h-full overflow-x-hidden">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content="Guia de perguntas comuns em entrevistas de JavaScript">
   	<title>JavaScript Interview Helper - Perguntas e Respostas</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
-		<h1 class="text-3xl font-bold underline">
-  		Hello world!
-		</h1>
+	<body class="m-0 p-0 w-full h-full overflow-x-hidden">
+		<InterviewHelper client:load questions={questions} />
 	</body>
 </html>

@@ -1,0 +1,20 @@
+{
+	// Use Biome as the default formatter for the workspace
+	"editor.defaultFormatter": "biomejs.biome",
+	// Enable format on save to keep code consistent
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.organizeImports.biome": "explicit",
+		"source.organizeImports": "never"
+	},
+	// Ensure JavaScript/TypeScript files use Biome as the formatter
+	"[javascript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[astro]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	}
+}
