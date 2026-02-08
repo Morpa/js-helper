@@ -1,43 +1,103 @@
-# Astro Starter Kit: Minimal
+# JavaScript Interview Helper 🚀
 
-```sh
-pnpm create astro@latest -- --template minimal
+Um guia interativo com as 10 perguntas mais comuns em entrevistas de JavaScript. Perfeito para quando der aquele branco durante a entrevista!
+
+## 🎯 Características
+
+- ✅ 10 perguntas mais comuns de JavaScript
+- 📖 Explicações claras e objetivas
+- 💡 Exemplos práticos de código
+- 🔍 Busca por palavras-chave
+- 🏷️ Filtro por categoria
+- 📱 Interface responsiva e moderna
+- ⚡ Rápido e leve (Astro + React)
+
+## 🚀 Como usar
+
+### Instalação
+
+```bash
+# Instalar dependências
+npm install
+
+# Rodar em desenvolvimento
+npm run dev
+
+# Build para produção
+npm run build
+
+# Preview da build
+npm run preview
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+O projeto estará disponível em `http://localhost:4321`
 
-## 🚀 Project Structure
+## 📝 Como adicionar novas perguntas
 
-Inside of your Astro project, you'll see the following folders and files:
+Para adicionar mais perguntas, basta editar o arquivo `src/data/questions.ts`:
 
-```text
-/
-├── public/
+```typescript
+{
+  id: 11, // próximo ID
+  question: "Sua pergunta aqui?",
+  explanation: "Explicação clara e concisa do conceito",
+  example: `// Código de exemplo
+const exemplo = 'aqui';`,
+  category: "Fundamentals" // ou "Async", "ES6+", etc.
+}
+```
+
+### Categorias disponíveis
+
+- **Fundamentals**: Conceitos básicos e fundamentais
+- **Async**: Assíncrono, Promises, async/await
+- **ES6+**: Recursos modernos do JavaScript
+
+Você pode criar novas categorias simplesmente usando um novo nome no campo `category`.
+
+## 🎨 Personalização
+
+O projeto usa **Tailwind CSS** para estilização. Você pode personalizar:
+
+- **Cores**: Edite o gradiente e cores no componente `InterviewHelper.tsx`
+- **Layout**: Ajuste as classes do Tailwind conforme necessário
+- **Fontes**: Adicione fontes customizadas no arquivo `index.astro`
+
+## 📦 Estrutura do Projeto
+
+```
+interview-helper/
 ├── src/
+│   ├── components/
+│   │   └── InterviewHelper.tsx    # Componente principal React
+│   ├── data/
+│   │   └── questions.ts           # Arquivo com as perguntas (EDITE AQUI!)
 │   └── pages/
-│       └── index.astro
+│       └── index.astro            # Página principal
+├── astro.config.mjs               # Configuração do Astro
+├── tailwind.config.mjs            # Configuração do Tailwind
+├── tsconfig.json                  # Configuração TypeScript
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 💡 Dicas de uso
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+1. **Durante a entrevista**: Tenha o app aberto em uma aba separada
+2. **Estudo**: Use a busca para revisar conceitos específicos
+3. **Filtros**: Use as categorias para focar em áreas específicas
+4. **Mobile**: O app é totalmente responsivo, use no celular se precisar
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 🛠️ Tecnologias
 
-## 🧞 Commands
+- **Astro** - Framework web moderno e rápido
+- **React** - Para interatividade
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Estilização utilitária
 
-All commands are run from the root of the project, from a terminal:
+## 📄 Licença
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+Livre para uso pessoal e educacional!
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+**Boa sorte na sua entrevista! 🍀**
